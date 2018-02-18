@@ -35,7 +35,7 @@ gem 'jbuilder', '~> 2.5'
 
 # KW INSTALLED
 gem 'ffi', '~> 1.9.18'
-gem 'bootstrap-sass', '~> 3.3'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'jquery-rails'
 
