@@ -1,5 +1,4 @@
 class OrderConversationsService
-
   def initialize(params)
     @user = params[:user]
   end
@@ -12,5 +11,4 @@ class OrderConversationsService
       b.messages.last.created_at <=> a.messages.last.created_at
     }
   end
-
 end
