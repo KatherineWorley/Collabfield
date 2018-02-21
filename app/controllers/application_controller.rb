@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :all_ordered_conversations
+  before_action :is_signed_in?
 
   def all_ordered_conversations 
 	  if user_signed_in?
