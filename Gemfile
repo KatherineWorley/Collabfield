@@ -41,6 +41,13 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'bootstrap_form', '~> 2.7'
 
+gem 'rspec-rails', '~> 3.7'
+gem 'factory_girl_rails'
+gem 'rails-controller-testing'
+gem 'headless'
+gem 'poltergeist'
+gem 'database_cleaner'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
