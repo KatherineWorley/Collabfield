@@ -40,6 +40,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'jquery-rails'
 gem 'devise'
 gem 'bootstrap_form', '~> 2.7'
+gem 'faker'
 
 gem 'rspec-rails', '~> 3.7'
 gem 'factory_bot', '~> 4.8'
