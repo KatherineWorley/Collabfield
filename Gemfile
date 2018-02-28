@@ -42,7 +42,7 @@ gem 'devise'
 gem 'bootstrap_form', '~> 2.7'
 
 gem 'rspec-rails', '~> 3.7'
-gem 'factory_girl_rails'
+gem 'factory_bot', '~> 4.8'
 gem 'rails-controller-testing'
 gem 'headless'
 gem 'poltergeist'

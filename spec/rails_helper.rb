@@ -8,7 +8,7 @@ require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 
   require 'capybara/poltergeist'
-  require 'factory_girl_rails'
+  require 'factory_bot'
   require 'capybara/rspec'
 
   config.include Devise::Test::IntegrationHelpers, type: :feature
