@@ -9,8 +9,6 @@
         <h3><%= post.title %></h3> 
         <p><%= post.content %></p>
         <%= link_to "I'm interested", post_path(post.id), class: 'interested' %>
-        <%= render post_format_partial_path, post: post %>
-
       </div>
     </div>
   </div><!-- card -->
