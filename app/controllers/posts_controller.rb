@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :redirect_if_not_signed_in, only: [:new]
+  
   def new
     @branch = params[:branch]
     @categories = Category.where(branch: @branch)
@@ -48,5 +50,10 @@ class PostsController < ApplicationController
       category: params[:category],
       branch: params[:action]
     }).call
+  end
+
+  def post_params
+    params.require(:post).permit(:content, :title, :categ
+    .merge(user_id: current_user.id)
   end
 end
