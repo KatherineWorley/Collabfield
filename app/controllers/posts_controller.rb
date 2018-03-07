@@ -45,8 +45,12 @@ class PostsController < ApplicationController
     respond_to do |format|
     format.html
     format.js { render partial: 'posts/posts_pagination_page' }
-  end
+    end
 	end
+
+  def conversation_exist?
+    Private::Conversation.between_users(current_user.id, @post.user.id).present?
+  end
 
   def get_posts
     PostsForBranchService.new({
