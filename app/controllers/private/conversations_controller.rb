@@ -28,4 +28,8 @@ class Private::ConversationsController < ApplicationController
 	  session[:private_conversations] ||= []
 	  session[:private_conversations] << @conversation.id
 	end
+
+	def already_added?
+  	session[:private_conversations].include?(@conversation.id)
+	end
 end
